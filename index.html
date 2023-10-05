@@ -25,6 +25,10 @@
         heart.classList.add("fadeout-animate");
         // 위의 heart는 스타일링 클래스, fadeout-animate은 애니메이션 클래스
       }, 50);
+      // fadeout-animate이 끝난 후에 하트 요소 저거
+      setTimeout(function() {
+        container.removeChild(heart);
+      }, 2050);
     })
   </script>
 </body>
