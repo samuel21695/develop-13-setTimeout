@@ -7,7 +7,7 @@
 </head>
 <body>
   <div id="root">
-    <button id="heat-button">Click Me</button>
+    <button id="heart-button">Click Me</button>
     <div id="heart-container"></div>
   </div>
   <script>
@@ -17,6 +17,9 @@
       const heart = document.createElement("div");
       heart.className = "heart";
       // 하트 요소를 컨테이너에 추가
+      const container = document.getElementById("heart-container");
+      container.appendChild(heart);
+      // 생성한 하트 요소를 위 컨테이너 부분에 자식으로 추가
     })
   </script>
 </body>
